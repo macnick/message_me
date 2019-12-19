@@ -16,3 +16,6 @@
 //= require turbolinks
 //= require semantic-ui
 //= require_tree .
+
+$(document).on("turbolinks:load", () => $(".ui.dropdown").dropdown());
+// You can add class="simple" to menu if you want it to open on hover
