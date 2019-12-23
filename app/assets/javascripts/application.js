@@ -17,5 +17,12 @@
 //= require semantic-ui
 //= require_tree .
 
-$(document).on("turbolinks:load", () => $(".ui.dropdown").dropdown());
+$(document).on("turbolinks:load", () => {
+  $(".ui.dropdown").dropdown();
+  $(".message .close").on("click", function() {
+    $(this)
+      .closest(".message")
+      .transition("fade");
+  });
+});
 // You can add class="simple" to menu if you want it to open on hover
