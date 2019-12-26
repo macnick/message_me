@@ -4,11 +4,11 @@
 
   <h3 class="ui center aligned medium icon header">
     <i class="circular orange power icon"></i>
-    Log in to continue
+    Here you can sign up for our service
   </h3>
 
   <div class="ui placeholder segment">
-    <div class="ui two column very relaxed stackable grid">
+    <div class="ui one column very relaxed stackable grid">
       <div class="column">
         <%= form_for(:session, html: {class: "ui form", role: "form"}, url: login_path) do |f| %>
           <div class="field">
@@ -25,19 +25,8 @@
               <i class="lock icon"></i>
             </div>
           </div>
-          <%= f.button "Login", class:"ui blue submit button" %>
-        <% end %>       
-      </div>
-      <div class="middle aligned column">
-        <a href="/signup">
-          <div class="ui big orange button signup icon">
-            <i class="signup icon"></i>
-            Sign Up
-          </div>
-        </a>
-        </div>
-      </div>
-    <div class="ui vertical divider">
-      Or
+          <%= f.button "Sign up", class:"ui blue submit button" %>
+        <% end %>      
     </div>
+  </div>
 </div>
