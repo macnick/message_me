@@ -22,6 +22,14 @@ scroll_bottom = function() {
     $("#messages").scrollTop($("#messages")[0].scrollHeight);
   }
 };
+clear_input = function() {
+  $("#message_body").on("keydown", e => {
+    if (e.keyCode == 13) {
+      $("button").click();
+      e.target.value = "";
+    }
+  });
+};
 
 $(document).on("turbolinks:load", () => {
   $(".ui.dropdown").dropdown();
@@ -30,6 +38,7 @@ $(document).on("turbolinks:load", () => {
       .closest(".message")
       .transition("fade");
   });
+  clear_input();
   scroll_bottom();
 });
 // You can add class="simple" to menu if you want it to open on hover
