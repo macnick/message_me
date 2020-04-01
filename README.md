@@ -16,7 +16,6 @@ After user logs in
 - Ruby 2.6.4
 - Ruby on Rails 5.2.3
 - A basic familiarity with Ruby on Rails
-
 ```
 
 ### Installation
