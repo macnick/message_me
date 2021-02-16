@@ -23,7 +23,7 @@ scroll_bottom = function() {
   }
 };
 clear_input = function() {
-  $("#message_body").on("keydown", e => {
+  $("#message_body").on("keydown", function(e) {
     if (e.keyCode == 13) {
       $("button").click();
       e.target.value = "";
@@ -31,7 +31,7 @@ clear_input = function() {
   });
 };
 
-$(document).on("turbolinks:load", () => {
+$(document).on("turbolinks:load", function() {
   $(".ui.dropdown").dropdown();
   $(".message .close").on("click", function() {
     $(this)

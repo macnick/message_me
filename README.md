@@ -1,4 +1,4 @@
-# README
+# MessageMe chat application
 
 # Project Chat app
 
@@ -81,7 +81,5 @@ Give us a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MiT](LICENSE) licensed.
-
-```
 
 ```
