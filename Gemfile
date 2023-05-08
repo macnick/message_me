@@ -8,7 +8,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
-gem 'jquery-rails', '~> 4.3.5'
+gem 'jquery-rails', '~> 4.4.0'
 gem 'puma', '~> 5.6'
 gem 'rails', '~> 5.2.3'
 gem 'sass-rails', '~> 5.0'
